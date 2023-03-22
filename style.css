@@ -1,0 +1,63 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-image: url(/assets/homepage.jpg);
+    background-size: cover;
+}
+
+a, button {
+    text-decoration: none;
+}
+
+header {
+    padding: 0 25px 0 25px;
+    height: 50px;
+    background-color: #2A3B49;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div a {
+    color: #7BFFE9;
+    font-size: 36px;    
+}
+
+header nav a {
+    color: #FFFFFF;
+    font-size: 16px;
+    padding-left: 35px;
+}
+
+.banner{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.banner p {
+    margin-bottom: 0;
+    padding: 70px 35px;
+    width: 35%;
+    height: 200px;
+    border-radius: 150px 150px 150px 0px;
+    background-color: #2A3B49;
+    text-align: center;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.banner button {
+    width: 318px;
+    height: 85px;
+    border: 2px solid #7BFFE9;
+    border-radius: 60px;
+    margin-right: 25px;
+    font-size: 26px;
+    color: #7BFFE9;
+    background-color: transparent;
+
+}
