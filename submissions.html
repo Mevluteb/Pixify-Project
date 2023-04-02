@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/index.html">PIXIFY</a>
+        </div>
+        <nav>
+            <a href="/submissions.html">2023 Submissions</a>
+            <a href="">About</a>
+            <a href="">Dark Mode</a>
+        </nav>
+    </header>
+    <div class="submissions-container">
+        <div class="submissions" >
+            <h1>2023 Submissions</h1>
+            <div id="submissions-added">
+                
+            </div>
+        </div>
+        <div class="submissions-input">
+            <h4>SUBMIT YOUR WORK</h4>
+            <form>
+                <input id="input-name" type="text" placeholder="Your name" required>
+                <input id="input-title" type="text" placeholder="Title of Your Entry" required>
+                <input id="input-image1" type="text" placeholder="Image Url One" required>
+                <input id="input-image2" type="text" placeholder="Image Url Two">
+                <input id="input-image3" type="text" placeholder="Image Url Three">
+                <input id="input-image4" type="text" placeholder="Image Url Four">
+                <input id="input-image5" type="text" placeholder="Image Url Five">
+            </form>
+            <button onclick="submitted()">SUBMIT</button>
+        </div>
+    </div> 
+    <script src="/script.js"></script> 
+</body>
+</html>

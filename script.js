@@ -49,3 +49,54 @@ const imageSets = [
     }
 
   ];
+
+  let inputImg = document.getElementById("input-image1");
+  let inputName = document.getElementById("input-name");
+  let inputTitle = document.getElementById("input-title");
+  let submissionsAdded = document.getElementById("submissions-added")
+
+  const displayMenu = (list) => {
+    const imageSets = list.map((item) => {
+      return `<div id="submitted-card">
+      <img src=${item.images} alt=${item.name} id="submitted-image"/>
+      <div id="submitted-details">
+        <p>${item.title} - ${item.name}</p>
+        <a>see more</a>
+      </div>
+    </div>`
+    }).join("");
+    submissionsAdded.innerHTML = imageSets;
+
+  };
+
+  window.onload = function(){
+    displayMenu(imageSets);
+  }
+
+  const submitted = () => {
+
+    let newDiv = document.createElement("div");
+    newDiv.setAttribute("id", "submitted-card");
+    submissionsAdded.appendChild(newDiv);
+
+    let newImg = document.createElement("img");
+    newImg.setAttribute("id", "submitted-image");
+    newImg.setAttribute("src", inputImg.value);
+    newDiv.appendChild(newImg);
+
+    let newDivNested = document.createElement("div");
+    newDivNested.setAttribute("id", "submitted-details");
+    newDiv.appendChild(newDivNested);
+
+    let newTitle = document.createElement("p");
+    newTitle.innerHTML = inputTitle.value + " - " + inputName.value;
+    newTitle.setAttribute("id", "submitted-title");
+    newDivNested.appendChild(newTitle);
+
+    let newSeeMore = document.createElement("a");
+    let link = document.createTextNode("see more");
+    newSeeMore.appendChild(link);
+    newSeeMore.href = "#";
+    newSeeMore.setAttribute("id", "submitted-more");
+    newDivNested.appendChild(newSeeMore);
+  }

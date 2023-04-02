@@ -1,0 +1,129 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+
+}
+
+a, button {
+    text-decoration: none;
+}
+
+header {
+    padding: 0 25px 0 25px;
+    height: 50px;
+    background-color: #2A3B49;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div a {
+    color: #7BFFE9;
+    font-size: 36px;    
+}
+
+header nav a {
+    color: #FFFFFF;
+    font-size: 16px;
+    padding-left: 35px;
+}
+
+header nav :last-child{
+    color: #7BFFE9;
+}
+
+.submissions-container{
+    display: flex;
+    margin-top: 50px;
+}
+
+.submissions{
+    width: 750px;
+    position: absolute;
+    left: 60px;
+}
+
+.submissions h1{
+    text-align: center;
+}
+
+#submissions-added{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.submissions-input{
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: #2A3B49;
+    height: 500px;
+    width: 350px;
+    position: absolute;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submissions-input h4{
+    color: #FFFFFF;
+}
+
+.submissions-input form{
+    height: 350px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.submissions-input form input{
+    height: 25px;
+    border-radius: 7px;
+}
+
+::placeholder{
+    font-family: 'Montserrat';
+    padding-left: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #D9D9D9;
+}
+
+.submissions-input button{
+    font-family: 'Montserrat';
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #7BFFE9;
+    border: 1px solid #7BFFE9;
+    border-radius: 60px;
+    background-color: transparent;
+}
+
+#submitted-card {
+    margin: 10px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+#submitted-card a {
+    font-size: 10px;
+}
+
+#submitted-image{
+    width: 330px;
+    border-radius: 8px;
+}
+
+#submitted-details{
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
