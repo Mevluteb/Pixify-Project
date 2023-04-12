@@ -100,3 +100,22 @@ const imageSets = [
     newSeeMore.setAttribute("id", "submitted-more");
     newDivNested.appendChild(newSeeMore);
   }
+
+  const modeButton = document.querySelector(".mode-btn");
+  const toggleTheme = () => {
+    const body = document.querySelector("body");
+    const h1 = document.querySelector("h1");
+    const pAll = document.querySelectorAll("p");
+    
+    if(body.style.backgroundColor === "#2A3B49") {
+      body.style.backgroundColor = "white";
+      modeButton.innerHTML = "Dark mode";
+    } else {
+      body.style.backgroundColor = "#2A3B49";
+      modeButton.innerHTML = "Light mode";
+      h1.style.color = "white";
+      pAll.style.color = "white";
+    }
+  };
+
+  modeButton.onclick = toggleTheme;
